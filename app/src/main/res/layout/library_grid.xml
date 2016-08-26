@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical"
+    style="@style/Base.TextAppearance.AppCompat.Button">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imagebook"
+        android:src="@mipmap/books"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/textTitle"
+        android:maxLines="1"
+        android:textColor="#4bb3eb"
+        android:textSize="12sp"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonOpen"
+            android:layout_gravity="right"
+            android:src="@mipmap/eye" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonRemove"
+            android:src="@mipmap/bin"
+            android:layout_gravity="right" />
+
+    </LinearLayout>
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/textPages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12/20"
+        android:textSize="15sp"
+        android:singleLine="true"
+        autofit:minTextSize="8sp"
+        android:maxLines="1"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/labels"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" />
+
+</LinearLayout>

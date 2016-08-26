@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PdfReader</string>
+    <string name="toolbar_library">Libreria</string>
+    <string name="toolbar_add">Añadir</string>
+    <string name="activity_library">Libreria</string>
+    <string name="book_deleted">Libro eliminado</string>
+    <string name="book_already_added">El Libro ya lo tienes añadido</string>
+</resources>
